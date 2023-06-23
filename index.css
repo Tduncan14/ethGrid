@@ -1,5 +1,15 @@
+
+body{
+    font-family: 'Poppins',sans-serif;
+}
+
+.project-grid{
+    display: grid;
+    grid-template-columns: 400px 400px 1fr;
+}
+
+
 .project{
-    width:300px;
     position:relative;
 }
 
@@ -13,6 +23,7 @@
 
 .project .overlay{
     position:absolute;
+    background-color: rgba(255,255,255,0.5);
     top:0;
     left:0;
     width: 100%;
@@ -21,4 +32,16 @@
     justify-content: center;
     align-items:center;
     margin:0;
+    font-size:36px;
+    font-weight:bold;
+    letter-spacing:2px;
+    opacity: 0;
+    transition: all 0.7s ease;
+}
+
+
+
+.project .overlay:hover{
+    opacity: 1;
+    cursor: pointer;
 }
