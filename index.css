@@ -4,10 +4,35 @@ body{
 }
 
 .project-grid{
-    display: grid;
-    grid-template-columns: 400px 400px 1fr;
+    display:grid;
+    grid-template-areas:"eth eth alphabet"
+                        "eth eth traveler"
+                        "astro cube traveler";
 }
 
+#eth {
+    grid-area:eth;
+}
+
+
+#alphabet{
+    grid-area:alphabet;
+}
+
+
+#traveler{
+    grid-area:traveler;
+}
+
+
+#cube{
+    grid-area:cube;
+}
+
+
+#astro{
+    grid-area:astro;
+}
 
 .project{
     position:relative;
