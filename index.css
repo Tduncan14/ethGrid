@@ -10,8 +10,8 @@ body{
                         "astro cube traveler"
                         "cup insta insta"
                         "cup insta insta"
-                        "foam foam dimensional"
-                        "foam foam dimensional";
+                        "foam foam dismensional"
+                        "foam foam dismensional";
    
     gap:16px;
     width:100%;
@@ -66,7 +66,7 @@ body{
 }
 
 #dimensional{
-    grid-area:dimensional;
+    grid-area:dismensional;
 }
 
 .project{
@@ -104,4 +104,29 @@ body{
 .project .overlay:hover{
     opacity: 1;
     cursor: pointer;
+}
+
+
+
+
+@media only screen  and (max-width:1100px){
+
+
+    .project-grid{
+        grid-template-areas:
+        "eth eth"
+        "alphabet traveler"
+        "cube astro"
+        "insta insta"
+        "cup foam"
+        "dismensional dismensional ";
+        max-width:100%;
+    }
+
+
+
+
+
+
+
 }
