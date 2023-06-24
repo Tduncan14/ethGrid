@@ -3,6 +3,42 @@ body{
     font-family: 'Poppins',sans-serif;
 }
 
+
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    padding:64px 0 ;
+}
+
+.navbar .left{
+    font-size:32px;
+    font-weight:bolder;
+}
+
+.navbar .right a {
+    text-decoration: none;
+    color:black;
+}
+
+.navbar .right {
+    width:400px;
+    border:1px solid black;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+
+.navbar .right a:hover{
+    text-decoration: underline;
+    color:black;
+}
+
+.navbar .right img {
+    width:24px;
+    height:24px;
+}
+
 .project-grid{
     display:grid;
     grid-template-areas:"eth eth alphabet"
@@ -105,6 +141,11 @@ body{
     opacity: 1;
     cursor: pointer;
 }
+ .white {
+    color:white;
+}
+
+
 
 
 
@@ -122,10 +163,27 @@ body{
         "dismensional dismensional ";
         max-width:100%;
     }
+}
+
+@media only screen and (max-width:768px){
+
+    .project-grid{
+        grid-template-areas:
+        "eth eth"
+        "alphabet alphabet"
+        "traveler traveler"
+        "astro cube"
+        "insta insta"
+        "cup cup"
+        "foam foam"
+        "dismensional dismensional";
+        
+    }
 
 
-
-
+    .project .overlay{
+        font-size:24px;
+    }
 
 
 
